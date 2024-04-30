@@ -1,0 +1,46 @@
+<!-- Assuming you have Bootstrap CSS included in your project -->
+<div class="container mt-4">
+  <h2 class="text-center">Employee List</h2>
+  <br>
+  <div class="d-flex justify-content-center align-items-center">
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th class="py-10">First_Name</th>
+                  <th class="py-10">Last_Name</th>
+                  <th class="py-10">Email</th>
+                  <th class="py-10">Gender</th>
+                  <th class="py-10">Date_Of_Birth</th>
+                  <th class="py-10">Salary</th>
+                  <th class="py-10">Contact</th>
+                  <th class="py-10">Address</th>
+                  <th class="py-10">Education_Status</th>
+                  <th class="py-10">Experience</th>
+                  <th class="py-10">Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let employee of employees">
+                  <td class="py-10">{{ employee.firstName }}</td>
+                  <td class="py-10">{{ employee.lastName }}</td>
+                  <td class="py-10">{{ employee.emailId }}</td>
+                  <td class="py-10">{{ employee.gender }}</td>
+                  <td class="py-10">{{ employee.dob }}</td>
+                  <td class="py-10">{{ employee.salary }} Lpa</td>
+                  <td class="py-10">{{ employee.contactNumber }}</td>
+                  <td class="py-10">{{ employee.address }}</td>
+                  <td class="py-10">{{ employee.education }}</td>
+                  <td class="py-10">{{ employee.experience }} Yrs</td>
+
+                  <td class="py-10">
+                      <div class="btn-group">
+                          <button (click)="updateEmployee(employee.id)" class="btn btn-warning">Update</button>
+                          <button (click)="employeeDetails(employee.id)" class="btn btn-success">View</button>
+                          <button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

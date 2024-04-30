@@ -1,0 +1,12 @@
+/* Add spacing between label and value */
+div > div {
+    margin-bottom: 10px;
+}
+
+/* Apply bold style to labels */
+label {
+    font-weight: bold;
+    display: inline-block;
+    width: 120px; /* Adjust as needed */
+    margin-bottom: 5px;
+}

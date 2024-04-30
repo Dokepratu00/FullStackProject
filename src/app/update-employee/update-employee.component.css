@@ -1,0 +1,83 @@
+/* Overall container styling */
+.table{
+    max-width: 800px; /* Increase the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #fff; /* White background */
+    border: 2px solid brown; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Decreased padding inside the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    font-weight: bold;
+}
+
+
+/* Form title styling */
+h3 {
+    color: #333; /* Dark text color */
+    text-align: center;
+}
+
+/* Form section styling */
+.flname-container {
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* First and last name container styling */
+.fname,
+.lname {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Label styling */
+.fname label,
+.lname label {
+    display: block;
+    margin-bottom: 5px;
+    color:black; /* Slightly darker text color */
+}
+
+/* Input and select field styling */
+.fname-input,
+.lname-input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px; /* Add border-radius for rounded corners */
+}
+
+/* Submit button styling */
+.btn-success {
+    background-color: #28a745;
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Hover effect for the submit button */
+.btn-success:hover {
+    background-color: #218838; /* Darker color on hover */
+}
+
+/* Adjust margins for better spacing */
+.fname {
+    margin-right: 15px;
+}
+
+/* Add some bottom margin to the last form section */
+.lname-container {
+    margin-bottom: 20px;
+}
+/* Add this to your CSS or SCSS file */
+.error-message {
+    color: red;
+    margin-top: 5px; /* Adjust the margin as needed for spacing */
+  }
+  

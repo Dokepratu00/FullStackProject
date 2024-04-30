@@ -1,0 +1,18 @@
+.nav-item{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.title{
+    text-align: center;
+    margin-left: 70px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:blue; /* Add background color as needed */
+    text-align: center;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,118 @@
+/* Apply some general styling to the form container */
+/* Apply dark border to form sections and input fields */
+/* Apply dark border to input fields */
+
+
+
+form {
+    max-width: 800px; /* Increase the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #fff; /* White background */
+    border: 2px solid brown; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Decreased padding inside the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Style for form section containers */
+.flname-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Spacing between sections */
+}
+
+/* Style for individual input sections */
+.fname, .lname {
+    flex: 1;
+    margin-right: 20px; /* Adjust the right margin for spacing between sections */
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+/* Style for input fields */
+input, select {
+    width: calc(100% - 20px); /* Adjusted width, taking into account padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Hover effect for the submit button */
+.btn-success:hover {
+    background-color: #218838;
+    justify-content: center;
+}
+
+/* Add some general styling to the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add some top margin for better spacing */
+}
+
+/* Style for table header */
+.table th {
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Add a border for separation */
+}
+
+/* Style for table cells */
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style for alternating row colors */
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light background for even rows */
+}
+
+/* Style for buttons in the Actions column */
+.table .btn {
+    padding: 5px 10px;
+}
+
+/* Adjust margins for buttons in the Actions column */
+.table .btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px 0; /* Padding for top and bottom */
+    text-align: center;
+}
+
+/* Additional styling for a better look */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for the body */
+    margin: 0; /* Remove default body margin */
+}
+/* Add this to your CSS or SCSS file */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px; /* Adjust the margin as needed for spacing */
+  }
+  

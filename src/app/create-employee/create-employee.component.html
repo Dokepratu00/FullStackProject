@@ -1,0 +1,87 @@
+
+<div>
+    <h3>Create Employee</h3>
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="flname-container">
+            <div class="fname">
+                <label>First_Name</label>
+                <input type="text" class="fname-input" id="firstName" [(ngModel)]="employee.firstName"
+                    name="firstName" required>
+                <div *ngIf="!isAlphaOnly(employee.firstName)" class="error-message">Please enter alphabets only.</div>
+            </div>
+
+            <div class="lname">
+                <label>Last_Name</label>
+                <input type="text" class="lname-input" id="lastName" [(ngModel)]="employee.lastName"
+                    name="lastName" required>
+                <div *ngIf="!isAlphaOnly(employee.lastName)" class="error-message">Please enter alphabets only.</div>
+            </div>
+        </div>
+        <div class="flname-container">
+            <div class="fname">
+                <label>Email</label>
+                <input type="text" class="fname-input" id="emailId" [(ngModel)]="employee.emailId" name="emailId">
+            </div>
+
+            <div class="flname">
+                <label>Gender</label>
+                <select class="lname-input" id="gender" [(ngModel)]="employee.gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="flname-container">
+            <div class="fname">
+                <label>DOB</label>
+                <input type="date" class="fname-input" id="dob" [(ngModel)]="employee.dob" name="dob" required>
+                <div *ngIf="isYoungerThan18(employee.dob)" class="error-message">Age must be greater than 18.</div>
+            </div>
+
+            <div class="lname">
+                <label>Salary</label>
+                <input type="number" class="lname-input" id="salary" [(ngModel)]="employee.salary" name="salary">
+            </div>
+        </div>
+
+        <div class="flname-container">
+            <div class="lname">
+                <label>Contact</label>
+                <input type="text" class="lname-input" id="contactNumber" [(ngModel)]="employee.contactNumber"
+           name="contactNumber" (blur)="isValidContactNumber(employee.contactNumber)">
+    <div *ngIf="contactError" class="error-message">{{ contactError }}</div>
+
+            </div>
+
+            <div class="lname">
+                <label>Address</label>
+                <input type="text" class="lname-input" id="address" [(ngModel)]="employee.address" name="address">
+            </div>
+        </div>
+
+        <div class="flname-container">
+            <div class="fname">
+                <label>Experience</label>
+                <input type="number" class="fname-input" id="experience" [(ngModel)]="employee.experience"
+                    name="experience">
+            </div>
+
+            <div class="lname">
+                <label>Education</label>
+                <select class="lname-input" id="education" [(ngModel)]="employee.education" name="education">
+                    <option value="12th">12th</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="post-graduation">Post-Graduation</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>

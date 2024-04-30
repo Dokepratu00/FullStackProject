@@ -1,0 +1,44 @@
+<h3> View Employee Details</h3>
+<br>
+<div>
+    <div>
+        <label> <b> First_Name: </b></label> {{employee.firstName}}
+    </div>
+    <br>
+    <div>
+        <label> <b> Last_Name: </b></label> {{employee.lastName}}
+    </div>
+    <br>
+    <div>
+        <label> <b> Email: </b></label> {{employee.emailId}}
+    </div>
+    <br>
+    <div>
+        <label> <b> Gender: </b></label> {{employee.gender}}
+    </div>
+    <br>
+    <div>
+        <label><b>DOB:</b></label> {{employee.dob | date:'shortDate'}}
+    </div>
+    <br>
+    <div>
+        <label><b>Salary:</b></label> {{employee.salary | currency:'USD'}}
+    </div>
+    <br>
+    <div>
+        <label><b>Contact:</b></label> {{employee.contactNumber}}
+    </div>
+    <br>
+    <div>
+        <label><b>Address:</b></label> {{employee.address}}
+    </div>
+    <br>
+    <div>
+        <label><b>Experience:</b></label> {{employee.experience}}
+    </div>
+    <br>
+    <div>
+        <label><b>Education:</b></label> {{employee.education}}
+    </div>
+    
+</div>
